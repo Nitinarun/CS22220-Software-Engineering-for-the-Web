@@ -1,0 +1,75 @@
+<!--Software Engineering Group Project 03: index.html/(Release) Coded by ara16, doh14-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Running a Quiz</title>
+		<link href = "stylesheet.css" rel ="stylesheet">
+		<script src="script.js"></script>
+	</head>
+
+	<!---Background of the website--->
+	<body background="images/background.png">
+	
+		<header class="header">
+			<div class="logo-title">
+				<!---This is the Quiz Cafe Logo--->
+				<div class="logo-div">
+					<a href="index.html">
+						<img src ="images/quiz cafe logo.png" class="logo">
+					</a>
+				</div>
+			
+				<!---This is the Quiz Cafe Title--->
+				<div class="title">
+					<h2>Quiz Cafe</h2>
+				</div>
+			</div>
+
+			<!---This is the Nav bar--->
+			<nav class="index-nav">
+				<div class="welcome-header-div">
+					<h2 class="welcome-header-title">WELCOME TO THE QUIZ CAFE</h2>
+				</div>
+
+				<!---This is the Log in Button--->
+				<div class="login main-btn">
+					<a href="Dashboard.html">
+						<button id="show-login">User1234</button>
+					</a>
+				</div>
+			</nav>
+		</header>
+		
+		<!---This is the Fillinquestions title [Re-used code to reduce duplication]--->
+		<div class="fill-in-questions-title-runningq">
+			<h1>YOU CHOSE QUIZ NUMBER 1</h1>
+			<br>
+			<h3>Please select your options below</h3>
+		</div>
+		
+		<!---This is the Quiz Photos--->
+		<div class="running-quiz-container">
+			<div class="running-quiz1">
+				<img src="images/html5logo.png" class="html5-logo-pic2">
+				<br>
+					<h3 class="quiz-title-5">Quiz 1 - HTML</h3>
+					<h3 class="quiz-title-6">10 Questions about HTML</h3>
+					<br>
+					<button class="scrn-sharing-btn">Screen Sharing</button>
+						<label class="scrn-share-switch">
+							<input type="checkbox"> <span class="slider"></span>
+						</label>
+					<button class="timer-btn">Timer</button>
+						<label class="timer-switch">
+							<input type="checkbox"> <span class="slider"></span>
+						</label>
+			</div>
+		</div>
+
+		<div class="start-quizbtn-container">
+			<button class="start-quizbtn">Start Quiz</button>
+		</div>
+	</body>
+</html>

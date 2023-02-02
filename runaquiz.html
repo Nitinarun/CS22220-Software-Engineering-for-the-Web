@@ -1,0 +1,87 @@
+<!--Software Engineering Group Project 03: index.html/(Release) Coded by ara16, doh14-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Run a Quiz</title>
+		<link href = "stylesheet.css" rel ="stylesheet">
+		<script src="script.js"></script>
+	</head>
+
+	<!---Background of the website--->
+	<body background="images/background.png">
+	
+		<header class="header">
+			<div class="logo-title">
+				<!---This is the Quiz Cafe Logo--->
+				<div class="logo-div">
+					<a href="index.html">
+						<img src ="images/quiz cafe logo.png" class="logo">
+					</a>
+				</div>
+
+				<!---This is the Quiz Cafe Title--->
+				<div class="title">
+					<h2>Quiz Cafe</h2>
+				</div>
+			</div>
+
+			<!---This is the Nav bar--->
+			<nav class="index-nav">
+
+				<div class="welcome-header-div">
+					<h2 class="welcome-header-title">WELCOME TO THE QUIZ CAFE</h2>
+				</div>
+
+				<!---This is the Log in Button--->
+				<div class="login main-btn">
+					<a href="dashboard.html">
+						<button id="show-login">User1234</button>
+					</a>
+				</div>
+			</nav>
+		</header>
+		
+		<!---This is the Fillinquestions title [Re-used code to reduce duplication]--->
+		<div class="fill-in-questions-title-existingq">
+			<h1>WELCOME TO YOUR QUIZ LIST</h1>
+			<br>
+			<h3>Please select the quiz you would like to edit or delete from below</h3>
+		</div>
+	
+		<!--This is the Titles & buttons on the Seeexistingquizzes.html page-->
+		<div class="existing-quizzes-container">
+			<div class="existing-quiz1">
+				<img src="images/html5logo.png" class="html5-logo-pic">
+				<br>
+				<h3 class="quiz1-title">Quiz 1 - HTML</h3>
+				<h3 class="quiz1-descr">10 Questions about HTML</h3>
+				<br>
+				<a href="runningquiz.html">
+					<button class="quiz2-delete-btn2">Run a Quiz</button>
+				</a>
+			</div>
+
+			<div class="existing-quiz2">
+				<img src="images/motherboard.png" class="motherboard-pic">
+				<br>
+				<h3 class="quiz2-title">Quiz 2 - Hardware</h3>
+				<h3 class="quiz2-descr">8 Questions about Hardware</h3>
+				<br>
+				<a href="runningquiz.html">
+					<button class="quiz2-delete-btn2">Run a Quiz</button>
+				</a>
+			</div>
+
+		<div class="dropdown">
+		  <button class="dropbtn">Sort By</button>
+		  <div class="dropdown-content">
+			<a href="">Newest to Oldest</a>
+			<a href="">Oldest to Newest</a>
+			<a href="">A-Z</a>
+			<a href="">Z-A</a>
+		  </div>
+		</div>	
+	</body>
+</html>

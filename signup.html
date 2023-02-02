@@ -1,0 +1,72 @@
+<!--Software Engineering Group Project 03: index.html/(Release) Coded by ara16, doh14, vll5-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Sign Up</title>
+		<link href = "stylesheet.css" rel ="stylesheet">
+		<script src="script.js"></script>
+	</head>
+
+	<!---Background of the website--->
+	<body background="images/background.png">
+	
+		<header class="header">
+			<div class="logo-title">
+				<!---This is the Quiz Cafe Logo--->
+				<div class="logo-div">
+					<a href="index.html">
+						<img src ="images/quiz cafe logo.png" class="logo">
+					</a>
+				</div>
+
+				<!---This is the Quiz Cafe Title--->
+				<div class="title">
+					<h2>Quiz Cafe</h2>
+				</div>
+			</div>
+
+			<!---This is the Nav bar--->
+			<nav class="index-nav">
+				<!---This is the Log in Button--->
+				<div class="login main-btn">
+					<a href="login.html">
+						<button id="show-login">Log In</button>
+					</a>
+				</div>
+
+				<!---This is the Sign Up Button--->
+				<div class="signup main-btn">
+					<a href="signup.html">
+						<button id="show-sign">Sign Up</button>
+					</a>
+				</div>
+			</nav>
+		</header>
+	
+		<!--- This is the Login Title [Re-used code to reduce duplication]--->
+		<div class="login-title">
+			<h1>WELCOME TO QUIZ CAFE</h1>
+			<br>
+			<h3>Please Sign Up Below</h3>
+		</div>
+		
+		<!---This is the Signup Form--->
+		<div class="container">
+			<form action="register.php" method="POST">
+				<div class="form-group">
+					<label class="email-title" for="">Username</label>
+					<input type="text" class="form-control" placeholder= "Enter Username" required>
+				</div>
+				
+				<div class="form-group">
+					<label class="password-title" for="">Password</label>
+					<input type="password" class="form-control" placeholder= "Enter Password" required>
+				</div>
+				
+				<input type="submit" class="LI-btn" value="Sign up">
+			</form> 
+		</div>
+	</body>
+</html>

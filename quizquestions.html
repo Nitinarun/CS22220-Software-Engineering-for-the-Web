@@ -1,0 +1,99 @@
+<!--Software Engineering Group Project 03: index.html/(Release) Coded by ara16, doh14-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Fill In Quiz Questions</title>
+		<link href = "stylesheet.css" rel ="stylesheet">
+		<script src="script.js"></script>
+	</head>
+
+	<!---Background of the website--->
+	<body background="images/background.png">
+		
+		<!--- This is the Quiz Questions title [Re-used code to reduce duplication]--->
+		<div class="fill-in-questions-titleQQ">
+			<h1>PLEASE ENTER YOUR QUESTIONS AND ANSWERS</h1>
+			<br>
+			<h3>You will only be able to save the quiz once you add two or more questions</h3>
+			<h3>Once you added your answers, use the checkbox to select the correct answer(s)</h3>
+		</div>
+		
+		<!---Parent Container for CSS--->
+		<div class="parent-container">
+			<!---This is the Dropdown for Questions 1 - 10--->
+			<div class="question-button-container">
+				<button onclick="myFunction()" class="question-dropdown-btn">Number of Questions</button>
+					<div id="my-dropdown" class="question-dropdown-btn-content">
+						<ul>
+							<li>1 Question</li>
+							<li>2 Questions</li>
+							<li>3 Questions</li>
+							<li>4 Questions</li>
+							<li>5 Questions</li>
+							<li>6 Questions</li>
+							<li>7 Questions</li>
+							<li>8 Questions</li>
+							<li>9 Questions</li>
+							<li>10 Questions</li>
+						</ul>
+					</div>
+			</div>
+						
+			<!---This is the Quiz Questions Form [Re-used code to reduce duplication]--->
+			<div class="quiz-questions-container">
+				<form action="" method="GET">
+					<div class="form-group">
+						<label class="type-of-question" for="">Type of Question</label>
+						<select type="text" class="quiz-name-form-control" required>
+							<option>Multiple Choice</option>
+							<option>True or False</option>	
+						</select>
+					</div>
+					<div class="form-group">
+						<label class="question" for="">Question</label>
+						<input type="text" class="question-form-control" placeholder="Enter Question" required>
+					</div>
+									
+					<!--These are the answers-->
+					<div class="form-group">
+						<label class="question" for="">Answer 1</label>
+						<input class="checkboxes" type="checkbox">
+						<input type="text" class="question-form-control" placeholder="Enter Answer" required>
+					</div>
+					<div class="form-group">
+						<label class="question" for="">Answer 2</label>
+						<input class="checkboxes" type="checkbox">
+						<input type="text" class="question-form-control" placeholder="Enter Answer" required>
+					</div>
+					<div class="form-group">
+						<label class="question" for="">Answer 3</label>
+						<input class="checkboxes" type="checkbox">
+						<input type="text" class="question-form-control" placeholder="Enter Answer" required>
+					</div>
+					<div class="form-group">
+						<label class="question" for="">Answer 4</label>
+						<input class="checkboxes" type="checkbox">
+						<input type="text" class="question-form-control" placeholder="Enter Answer" required>
+					</div>
+
+					<div class="quiz-questions-buttons">
+						<button class="delete-question-btn">Delete question</button>
+					<br>
+					<br>
+					<button class="submit-btn">Submit</button>
+					</div>
+				</form> 
+			</div>
+		</div>
+		
+		<!--This is the buttons to Exit to dashboard & add photos-->
+		<div class="end-page-btn">
+			<a href="dashboard.html">
+				<button class="exit-dashboard-btn">Exit to Dashboard</button>
+			</a>
+			<input type="file" class="question-add-photo-btn" accept=".jpg, .jpeg" required>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!--Software Engineering Group Project 03: index.html/(Release) Coded by ara16, doh14-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Screen Share</title>
+		<link href = "stylesheet.css" rel ="stylesheet">
+		<script src="script.js"></script>
+	</head>
+
+	<!---Background of the website--->
+	<body background="images/background.png">
+		
+		<header class="header">
+			<div class="logo-title">
+				<!---This is the Quiz Cafe Logo--->
+				<div class="logo-div">
+					<a href="index.html">
+						<img src ="images/quiz cafe logo.png" class="logo">
+					</a>
+				</div>
+
+				<!---This is the Quiz Cafe Title--->
+				<div class="title">
+					<h2>Quiz Cafe</h2>
+				</div>
+			</div>
+
+			<!---This is the Nav bar--->
+			<nav class="index-nav">
+
+				<div class="welcome-header-div">
+					<h2 class="welcome-header-title">WELCOME TO THE QUIZ CAFE</h2>
+				</div>
+
+				<!---This is the Log in Button--->
+				<div class="login main-btn">
+					<a href="dashboard.html">
+						<button id="show-login">User1234</button>
+					</a>
+				</div>
+			</nav>
+		</header>
+		
+		<!---This is the Takingquiz title [Re-used code to reduce duplication]--->
+		<div class="taking-quiz-title-ttq">
+			<h1>What does HTML Stand for ?</h1>
+			<br>
+			<h3>Choose one or more answer from below</h3>
+		</div>
+		
+		<!--These are the answers -->
+		<div class="questionscontainer-ttq">
+			<div class="form-group">
+			<ol class="answers-ttq">
+				<li>High Text Machine Language</li>
+				<li>Hyper Text Markup Language</li>
+				<li>Home Tool Markup Language</li>
+				<li>Home Tool Markup Language</li>
+			</ol>
+		</div>
+
+			<!--This  is the Question Count-->
+			<div class="questioncountntimer-ttq">
+				<h3>Question 1 / 10</h3>
+				<br>
+				<h3>0:30</h3>
+			</div>
+		</div>
+		
+		<!--These are the buttons [Re-used code to reduce duplication]-->
+		<div class="teacher-buttons-container">
+			<button class="exit-dashboard-btn-ttq">Stop Quiz</button>
+			<button class="question-add-photo-btn-ttq">Next</button>
+			<button class="pause-btn">Pause</button>
+		</div>
+	</body>
+</html>

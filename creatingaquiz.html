@@ -1,0 +1,74 @@
+<!--Software Engineering Group Project 03: index.html/(Release) Coded by ara16, doh14, vll5-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Creating a Quiz</title>
+		<link href = "stylesheet.css" rel ="stylesheet">
+		<script src="script.js"></script>
+	</head>
+
+	<!---Background of the website--->
+	<body background="images/background.png">
+	
+		<header class="header">
+            <div class="logo-title">
+                <!---This is the Quiz Cafe Logo--->
+                <div class="logo-div">
+                    <a href="index.html">
+                        <img src ="images/quiz cafe logo.png" class="logo">
+                    </a>
+                </div>
+
+                <!---This is the Quiz Cafe Title--->
+                <div class="title">
+                    <h2>Quiz Cafe</h2>
+                </div>
+            </div>
+
+            <!---This is the Nav bar--->
+            <nav class="index-nav">
+                <div class="welcome-header-div">
+                    <h2 class="welcome-header-title">WELCOME TO THE QUIZ CAFE</h2>
+                </div>
+
+                <!---This is the Log in Button--->
+                <div class="login main-btn">
+                    <a href="dashboard.html">
+                        <button id="show-login">User1234</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+		
+		<!--- This is the Dashboard title [Re-used code to reduce duplication]--->
+		<div class="dashboard-title">
+			<h1>CREATING A NEW QUIZ</h1>
+			<br>
+			<h3>Please enter your Quiz Name, Description and Logo</h3>
+		</div>
+		
+		<!---This is the Creating a Quiz Form [Re-used code to reduce duplication]--->
+		<div class="creating-a-quiz-container">
+			<form action="">
+				<div class="form-group">
+					<label class="quiz-name" for="">Quiz Name</label>
+					<input type="text" class="quiz-nameform-control" placeholder="Enter Quiz Name" required>
+				</div>
+				<div class="form-group">
+					<label class="quiz-description" for="">Quiz Description</label>
+					<input type="text" class="quiz-descform-control" placeholder="Enter Quiz Description" required>
+				</div>
+				<!---This is the buttons within the form [Re-used code to reduce duplication]--->
+				<div class="btns">
+				    <button class="add-photo-btn">SAVE & ADD QUESTION</button>
+					<input type="file" class="add-photo-btn" accept=".jpg, .jpeg">
+					<a href="quizquestions.html">
+						<button class="next-btn">Save & Exit</button>
+					</a>
+				</div>
+			</form> 
+		</div>
+	</body>
+</html>

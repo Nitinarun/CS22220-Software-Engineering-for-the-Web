@@ -1,0 +1,69 @@
+<!--Software Engineering Group Project 03: index.html/(Release) Coded by ara16, doh14-->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=content-width, initial-scale=1.0">
+		<title>Taking the Quiz</title>
+		<link href = "stylesheet.css" rel ="stylesheet">
+		<script src="script.js"></script>
+	</head>
+
+	<!---Background of the website--->
+	<body background="images/background.png">
+	
+		<header class="header">
+			<div class="logo-title">
+				<!---This is the Quiz Cafe Logo--->
+				<div class="logo-div">
+					<a href="index.html">
+						<img src ="images/quiz cafe logo.png" class="logo">
+					</a>
+				</div>
+
+				<!---This is the Quiz Cafe Title--->
+				<div class="title">
+					<h2>Quiz Cafe</h2>
+				</div>
+			</div>
+
+			<!---This is the Nav bar--->
+			<nav class="index-nav">
+				<div class="welcome-header-div">
+					<h2 class="welcome-header-title">WELCOME TO THE QUIZ CAFE</h2>
+				</div>
+			</nav>
+		</header>
+		
+		<!---This is the Dashboard title [Re-used code to reduce duplication]--->
+		<div class="taking-quiz-title">
+			<h1>What does HTML Stand for ?</h1>
+			<br>
+			<h3>Choose one or more answer from below</h3>
+		</div>
+		
+		<!--These are the answers -->
+		<div class="questions-container">
+			<div class="form-group">
+				<input class="checkboxes" type="checkbox">
+				<label class="answers" for="">High Text Machine Language</label>
+				<br>
+				<input class="checkboxes" type="checkbox">
+				<label class="answers" for="">Hyper Text Markup Language</label>
+				<br>
+				<input class="checkboxes" type="checkbox">
+				<label class="answers" for="">Home Tool Markup Language</label>
+				<br>
+				<input class="checkboxes" type="checkbox">
+				<label class="answers" for="">None of the above</label>
+			</div>
+
+			<!--This  is the Question Count-->
+			<div class="questioncountntimer">
+				<h3>Question 1 / 10</h3>
+				<br>
+				<h3>0:30</h3>
+			</div>
+		</div>
+	</body>
+</html>
